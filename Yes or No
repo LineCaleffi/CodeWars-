@@ -1,0 +1,11 @@
+class YesOrNo
+{
+  public static String boolToWord(boolean b)
+  {
+    // return b ? "yes" : "no";
+    return b ? "Yes" : "No";
+  }
+  
+}
+
+// Preencha o método que leva um valor booleano e devolva uma string "Sim" para true, ou uma string "Não" para false.
