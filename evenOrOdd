@@ -1,0 +1,12 @@
+public class Kata {
+    public static String evenOrOdd(int numero) {
+      if(numero % 2 == 0){
+        return "Even"; // par
+      }else{
+        return "Odd"; // ímpar
+      }
+    }
+}
+
+
+// Crie uma função que tome um inteiro como um argumento e retorne "Even" para números pares ou "Odd" para números ímpares.
