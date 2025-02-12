@@ -1,0 +1,33 @@
+/* Escreva uma função para dividir uma string e convertê-la em um conjunto de palavras. Em java.
+
+Examplos (Input ==> Output):
+"Robin Singh" ==> ["Robin", "Singh"]
+"I love arrays they are my favorite" ==> ["I", "love", "arrays", "they", "are", "my", "favorite"]
+*/
+
+
+public class Solution {
+
+    public static String[] stringToArray(String textoSeparado) {
+      return textoSeparado.split("\\s+");
+    }
+}
+/* Essa função utiliza o método split() da classe String para dividir a string em um array de palavras. 
+   O parâmetro "\\s+" é uma expressão regular que corresponde a um ou mais espaços em branco, 
+   o que permite dividir a string em palavras separadas por espaços.
+*/
+
+
+
+// Classe MAIN
+import org.junit.Test;
+import static org.junit.Assert.assertArrayEquals;
+import org.junit.runners.JUnit4;
+
+public class SolutionTest {
+    @Test
+    public void basicTests() {
+        assertArrayEquals(new String[]{"Robin", "Singh"}, Solution.stringToArray("Robin Singh"));
+        assertArrayEquals(new String[]{"I", "love", "arrays", "they", "are", "my", "favorite"}, Solution.stringToArray("I love arrays they are my favorite"));
+    }
+}
