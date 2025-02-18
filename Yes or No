@@ -9,3 +9,14 @@ class YesOrNo
 }
 
 // Preencha o método que leva um valor booleano e devolva uma string "Sim" para true, ou uma string "Não" para false.
+
+
+
+// Em JavaScript 
+
+function boolToWord( bool ){
+  return bool ? 'Yes' : 'No';
+}
+
+//OU
+const boolToWord = bool => (bool ? 'Yes' : 'No')
